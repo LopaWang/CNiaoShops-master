@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_0"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottiefiles.com - Emoji Wink.json"
+            app:lottie_loop="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_1"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/C.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_2"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/N.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_3"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/S.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_4"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/H.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_5"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/O.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_6"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/P.json" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view_7"
+                android:layout_width="@dimen/lottie_letter_size"
+                android:layout_height="@dimen/lottie_letter_size"
+                app:lottie_fileName="Mobilo/S.json" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

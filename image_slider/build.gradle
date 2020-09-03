@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion as Integer
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion as Integer
+        targetSdkVersion rootProject.ext.targetSdkVersion as Integer
+        versionCode 15
+        versionName "1.1.5"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+          abortOnError false
+      }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api "com.android.support:appcompat-v7:${rootProject.supportLibsVersion}"
+    api "com.android.support:support-v4:${rootProject.supportLibsVersion}"
+    api "com.squareup.picasso:picasso:${rootProject.picassoLibsVersion}"
+    api 'com.nineoldandroids:library:2.4.0'
+}

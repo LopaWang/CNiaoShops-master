@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#EB4F38</color>
+    <color name="colorPrimaryDark">#EB4F38</color>
+    <color name="colorAccent">#EB4F38</color>
+
+    <color name="def_background">#f1f1f1</color>
+    <color name="def_background_black">#333</color>
+
+    <color name="green_dialog">#029487</color>
+
+    <color name="green_google">#0f9d58</color>
+    <color name="blue_map">#0191ff</color>
+
+    <color name="ddcx_color_grey2">#BBB</color>
+
+    <color name="ucrop_color_toolbar">#FF6E40</color>
+    <color name="ucrop_color_statusbar">#CC5833</color>
+    <color name="ucrop_color_toolbar_widget">#fff</color>
+    <color name="ucrop_color_widget">#000</color>
+    <color name="ucrop_color_widget_active">#FF6E40</color>
+    <color name="ucrop_color_widget_background">#fff</color>
+    <color name="ucrop_color_widget_text">#000</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="ucrop_color_crop_background">#000</color>
+
+</resources>

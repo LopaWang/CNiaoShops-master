@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/et_search"
+        style="@style/SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:hint="@string/please_input_search_content"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/HeaderStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_right"
+        style="@style/ActionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="invisible" />
+
+</RelativeLayout>

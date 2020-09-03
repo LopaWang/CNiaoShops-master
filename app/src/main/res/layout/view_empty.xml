@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/empty_animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="EmptyState.json"
+            app:lottie_loop="true" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_indicator_view"
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp">
+
+        <TextView
+            android:id="@+id/tv_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_more"
+            android:textColor="@color/def_text_light"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/loading"
+            android:textColor="@color/def_text_light"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/please_connect_network"
+            android:textColor="@color/def_text_light"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

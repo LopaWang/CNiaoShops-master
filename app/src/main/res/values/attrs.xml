@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CnToolbar">
+        <attr name="rightButtonIcon" format="reference" />
+        <attr name="isShowSearchView" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberAddSubView">
+        <attr name="value" format="integer|reference" />
+        <attr name="min_value" format="integer|reference" />
+        <attr name="max_value" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="progress_color" format="color" />
+        <attr name="progress" format="integer" />
+    </declare-styleable>
+
+</resources>

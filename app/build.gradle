@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
+//apply plugin: 'android-apt'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'cwq'
+            keyPassword '123456'
+            storeFile file('../develop.jks')
+            storePassword '123456'
+        }
+    }
+    //**兼容Android6.0系统所需，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion rootProject.ext.compileSdkVersion as Integer
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
+    defaultConfig {
+        applicationId "com.chhd.cniaoshops"
+        minSdkVersion rootProject.ext.minSdkVersion as Integer
+        targetSdkVersion rootProject.ext.targetSdkVersion as Integer
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.release
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        dev {
+            // Enable pre-dexing to produce an APK that can be tested on
+            // Android 5.0+ without the time-consuming DEX build processes.
+        }
+        prod {
+            minSdkVersion 18
+
+            // The actual minSdkVersion for the production version.
+            minSdkVersion
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.jakewharton:butterknife:${rootProject.butterknifeLibsVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${rootProject.butterknifeLibsVersion}"
+    api "com.squareup.picasso:picasso:${rootProject.picassoLibsVersion}"
+    api "com.android.support:support-v4:${rootProject.supportLibsVersion}"
+    api "com.android.support:recyclerview-v7:${rootProject.supportLibsVersion}"
+    api "com.android.support:cardview-v7:${rootProject.supportLibsVersion}"
+    api "com.android.support:design:${rootProject.supportLibsVersion}"
+    api project(':toasty')
+    api project(':per_library')
+    api project(':image_slider')
+    api project(':material_dialogs_core')
+    api project(':ptr-lib')
+    api project(':sharesdk')
+    api files('libs/BmobSDK_3.5.3_20161116.jar')
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    api('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true;
+    }
+    api 'de.hdodenhof:circleimageview:2.1.0'
+    api 'com.orhanobut:logger:1.15'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.3'
+    api 'com.lzy.net:okgo:2.1.4'
+    api 'com.yanzhenjie.nohttp:nohttp:1.1.1'
+    api 'eu.davidea:flexible-adapter:5.0.0-rc1'
+    api 'eu.davidea:flipview:1.1.2'
+    api 'com.lcodecorex:tkrefreshlayout:1.0.6'
+    api 'com.airbnb.android:lottie:2.0.0-beta1'
+    api 'com.alibaba:fastjson:1.2.28'
+    api 'com.wang.avi:library:2.1.3'
+    api 'com.cjj.materialrefeshlayout:library:1.3.0'
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    api 'com.liaoinstan.springview:library:1.2.6'
+    api 'com.github.liuguangqiang.prettyprogressbar:library:0.2.0'
+    api 'com.github.liuguangqiang.swipeback:library:1.0.2@aar'
+    api 'com.github.d-max:spots-dialog:0.7@aar'
+    api 'com.wanjian:cockroach:0.0.5'
+    api 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    api 'com.zhy:okhttputils:2.6.2'
+    api 'com.github.chrisbanes:PhotoView:2.0.0'
+    api 'com.lzy.widget:view-core:0.2.2'
+    api 'com.rengwuxian.materialedittext:library:2.1.4'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'io.reactivex:rxandroid:1.2.0'
+    api 'io.reactivex:rxjava:1.1.6'
+    api 'com.squareup.okio:okio:1.7.0'
+    api 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    api 'com.yanzhenjie:album:1.0.5'
+    api 'com.yalantis:ucrop:2.2.0-native'
+    api 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    api 'com.yanzhenjie:permission:1.0.5'
+    api 'com.pingxx:pingpp-core:2.1.9'
+    api 'com.pingxx:pingpp-wxpay:2.1.9'
+    api 'com.pingxx:pingpp-alipay:2.1.9'
+    api 'com.contrarywind:Android-PickerView:3.2.4'
+    api 'com.zhy:base-adapter:3.0.3'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.amap.api:map3d-native:5.0.0@jar'
+    api 'com.amap.api:location:3.6.1@jar'
+    api 'com.amap.api:map3d:5.0.0@jar'
+    api 'com.amap.api:search:5.5.0@jar'
+    api 'com.lzy.widget:ninegridview:0.2.0'
+    testImplementation 'junit:junit:4.12'
+    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+}

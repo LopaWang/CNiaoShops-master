@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chhd.cniaoshops.ui.widget.SwipeDelRecyclerView
+            android:id="@+id/rv_shopping_cart"
+            style="@style/VerRecyclerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.liaoinstan.springview.widget.SpringView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_normal"
+        android:background="#9997a7a7"
+        android:paddingRight="@dimen/padding_normal">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            style="@style/RedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/all_select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="合计：￥0.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_settlement"
+            style="@style/ButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selecter_btn_style_red"
+            android:text="@string/go_settlement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

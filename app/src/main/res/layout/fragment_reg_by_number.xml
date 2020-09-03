@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chhd.cniaoshops.ui.fragment.RegByNumberFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_phone"
+            style="@style/MaterialEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/moblie_phone"
+            android:inputType="numberSigned"
+            app:met_iconLeft="@drawable/ic_phone_android_white_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_code"
+                style="@style/MaterialEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/code"
+                android:inputType="numberSigned"
+                app:met_iconLeft="@drawable/ic_phonelink_lock_white_24dp" />
+
+            <Button
+                android:id="@+id/btn_code"
+                style="@style/ButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/margin_big"
+                android:background="@drawable/selecter_btn_style_red"
+                android:text="@string/send_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_pwd"
+            style="@style/MaterialEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            app:met_iconLeft="@drawable/ic_lock_outline_black_24dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selecter_btn_style_red"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

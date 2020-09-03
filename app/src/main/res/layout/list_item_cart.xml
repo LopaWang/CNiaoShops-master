@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/check_box"
+                style="@style/RedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/empty_photo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="得力（deli）33123 至尊金贵系列大型办公家用保管箱 全钢防盗 震动报警 高65CM"
+                            android:textColor="@color/def_text_black"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ellipsize="end"
+                            android:text="698.0"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.chhd.cniaoshops.ui.widget.NumberAddSubView
+                    android:id="@+id/number_view"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+    <View style="@style/HorizontalLine" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hor_scroll_pic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_background_black"
+    tools:context="com.chhd.cniaoshops.ui.activity.HorScrollPicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.chhd.cniaoshops.ui.widget.TouchEventViewPager
+            android:id="@+id/vp_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/empty_photo"
+            android:transitionName="img" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <com.liuguangqiang.progressbar.CircleProgressBar
+                android:id="@+id/circle_progress_bar"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                app:background_color="@android:color/transparent"
+                app:progress="0"
+                app:progress_color="@android:color/white"
+                app:stroke_width="2dp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                style="?attr/actionModeCloseButtonStyle"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:contentDescription="@string/abc_action_mode_done"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:text="0 / 0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

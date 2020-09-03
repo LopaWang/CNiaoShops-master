@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion as Integer
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion as Integer
+        targetSdkVersion rootProject.ext.targetSdkVersion as Integer
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['resources']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            // aidl.srcDirs = ['src']
+            // renderscript.srcDirs = ['src']
+        }
+        androidTest.setRoot('tests')
+    }
+}
+
+dependencies {
+}

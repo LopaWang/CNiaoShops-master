@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/def_background</item>
+
+        <item name="colorControlNormal">#DDD</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeBlue" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_map</item>
+        <item name="colorPrimaryDark">@color/blue_map</item>
+        <item name="colorAccent">@color/blue_map</item>
+    </style>
+
+    <style name="AppThemeGreen" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green_google</item>
+        <item name="colorPrimaryDark">@color/green_google</item>
+        <item name="colorAccent">@color/green_google</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SearchView">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">#EEE</item>
+        <item name="android:background">@drawable/selector_search_view</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textCursorDrawable">@drawable/shape_cursor_white</item>
+        <item name="android:drawableLeft">@mipmap/icon_search</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CardViewsStyle" parent="CardView">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">3dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="contentPadding">10dp</item>
+    </style>
+
+    <style name="VerRecyclerStyle">
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="RedCheckBox">
+        <item name="android:button">@drawable/selector_cb_style_red</item>
+    </style>
+
+    <style name="TransparentTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="HeaderStyle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/WhiteToolbarStyle">
+        <item name="android:actionMenuTextAppearance">@style/MenuTextAppearance</item>
+    </style>
+
+    <style name="TitleTextAppearance">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MenuTextAppearance">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TabLayoutStyle">
+        <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="tabTextColor">@color/def_text_light</item>
+    </style>
+
+    <style name="TabLayoutStyleBlue">
+        <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@color/blue_map</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabSelectedTextColor">@color/blue_map</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="tabTextColor">@color/def_text_light</item>
+    </style>
+
+    <style name="TabTextAppearance">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="PtrStyle">
+        <item name="ptr_duration_to_close">200</item>
+        <item name="ptr_duration_to_close_header">1000</item>
+        <item name="ptr_ratio_of_header_height_to_refresh">1.2</item>
+        <item name="ptr_resistance">1.7</item>
+    </style>
+
+    <style name="MaterialEditTextStyle">
+        <item name="android:textCursorDrawable">@drawable/shape_cursor_green</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textColor">@color/def_background_black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="met_clearButton">true</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_iconPadding">0dp</item>
+        <item name="met_primaryColor">#4db6ac</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="UserDataHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#eee</item>
+        <item name="android:textColor">@color/def_background_black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="UserDataItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/bg_touch</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding_big</item>
+        <item name="android:paddingRight">@dimen/padding_big</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AddressAddItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding_normal</item>
+        <item name="android:paddingRight">@dimen/padding_normal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

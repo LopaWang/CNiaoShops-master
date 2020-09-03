@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_third_party_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_normal"
+    tools:context="com.chhd.cniaoshops.ui.activity.ThirdPartyRegActivity"
+    tools:showIn="@layout/activity_third_party_reg">
+
+    <LinearLayout
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_touch"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_big"
+        android:paddingRight="@dimen/padding_big">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/personal_avatar"
+            android:textColor="@color/def_background_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/ic_user" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:src="@mipmap/ic_left_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nickname"
+        style="@style/UserDataItem">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nickname"
+            android:textColor="@color/def_background_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户太吊名字无法显示"
+            android:textColor="@color/def_text_mid" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:src="@mipmap/ic_left_gray" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/UserDataItem">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gender"
+            android:textColor="@color/def_background_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textColor="@color/def_text_mid" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:src="@mipmap/ic_left_gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

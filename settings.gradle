@@ -1,0 +1,1 @@
+include ':app', ':toasty', ':per_library', ':image_slider', ':material_dialogs_core', ':ptr-lib', ':sharesdk'

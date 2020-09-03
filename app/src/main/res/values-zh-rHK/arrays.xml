@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="banner_img_urls">
+        <item>http://img30.360buyimg.com/da/jfs/t3400/334/410272248/227080/2b4d1ec2/5808deb9Nac816d03.jpg</item>
+        <item>http://img1.360buyimg.com/da/jfs/t3499/341/611435404/141868/9c2a4c35/580f2b90Nb12a5421.jpg</item>
+        <item>http://img1.360buyimg.com/da/jfs/t3364/334/570615819/94804/93bbb4c7/580db4cdNf123ee79.jpg</item>
+        <item>http://img14.360buyimg.com/da/jfs/t3799/90/417346772/205816/bc23c0e2/5809b279N084eba11.jpg</item>
+        <item>http://img12.360buyimg.com/da/jfs/t3658/333/440176928/89114/a6915492/5809cb94Nc814aaa3.jpg</item>
+        <item>http://img30.360buyimg.com/da/jfs/t3778/55/645372243/154756/695f4291/58106a14N58d9f047.jpg</item>
+    </string-array>
+
+    <string-array name="banner_titles">
+        <item>11.11来啦 尖货正式开卖</item>
+        <item>狂欢抢先购</item>
+        <item>低至1元秒</item>
+        <item>11.11家电预售 低至5折 提前抢</item>
+        <item>大牌提前购</item>
+        <item>母婴玩具</item>
+    </string-array>
+
+    <string-array name="menu_mine_title">
+        <item>我的订单</item>
+        <item>我的收藏</item>
+        <item>收货地址</item>
+        <item>我的消息</item>
+    </string-array>
+
+    <string-array name="menu_mine_icon">
+        <item>@drawable/mine_list_o</item>
+        <item>@drawable/mine_favorite</item>
+        <item>@drawable/mine_location</item>
+        <item>@drawable/mine_msg</item>
+    </string-array>
+
+
+</resources>

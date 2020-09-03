@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wares_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chhd.cniaoshops.ui.activity.WaresDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextAppearance="@style/TitleTextAppearance" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/refresh_layout"
+            style="@style/PtrStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+        <com.chhd.cniaoshops.ui.widget.ProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            app:progress_color="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

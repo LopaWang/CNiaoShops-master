@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_user_list_item_textview"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingLeft="51dp"
+    android:paddingRight="51dp"
+    android:text="大门外是否有路"
+    android:textColor="@color/def_text_light"
+    android:textSize="@dimen/text_size_normal">
+
+</TextView>

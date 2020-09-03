@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFF</color>
+    <color name="red">#F00</color>
+    <color name="black">#000</color>
+
+    <color name="def_text_black">#333</color>
+    <color name="def_text_mid">#666</color>
+    <color name="def_text_light">#999</color>
+
+    <color name="line_color">#DDD</color>
+
+</resources>
